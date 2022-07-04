@@ -13,9 +13,9 @@ function App() {
 
   useEffect(() => onAuthStateChanged(auth, (user) => setUser(user)), []);
 
-  if (user === null) {
+  if (user === null) 
     return <SignIn />;
-  }
+  
 
   return (
     <div className={`App ${isDarkmode ? "darkMode" : ""}`}>
